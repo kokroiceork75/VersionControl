@@ -1,4 +1,5 @@
 keyboard: 500
-iphone: 13000
+iphone: 52000
 mouse: 600
 water: 30
+ring: 170
