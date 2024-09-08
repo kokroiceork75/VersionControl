@@ -1,3 +1,4 @@
 keyboard: 500
 iphone: 13000
 mouse: 600
+water: 30
