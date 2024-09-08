@@ -2,4 +2,4 @@ keyboard: 500
 iphone: 98000
 mouse: 600
 water: 98
-ring: 980
+ring: 99
