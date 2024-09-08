@@ -1,0 +1,2 @@
+keyboard: 500
+iphone: 13000
