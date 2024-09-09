@@ -29,4 +29,9 @@ git checkout IDnumber -- filename
 ## 所有檔案還原到某還原點並捨棄該還原點之後的紀錄 (幾乎不可逆, 但reflog有機會)
 git reset --hard IDnumber
 
-
+## 本地專案會和遠端的 GitHub 連接起來並命名遠端儲存庫為 origin (網址的別名)
+git remote add origin https://github.com/kokroiceork75/VersionControl.git
+## 當前的分支強制重新命名為 main
+git branch -M main
+## 把main 分支的資料推到雲端 (origin)
+git push -u origin main
