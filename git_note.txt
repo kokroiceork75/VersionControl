@@ -11,7 +11,6 @@ git status
 git add <filename1> <filename2>
 ## 所有的變更都放入staging area
 git add .
-
 ## 將staging area 提交, -m 簡單紀錄這次提交的變更
 git commit -m "修正錯誤:無法正確處理輸入問題"
 
