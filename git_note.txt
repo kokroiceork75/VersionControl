@@ -1,4 +1,4 @@
-## record the info of author
+## 紀錄作者資訊
 git config --global user.name "ChenWei"
 git config --global user.email "q21597389@gmail.com"
 
@@ -8,7 +8,7 @@ git init
 ## 檢查目錄中檔案狀態
 git status
 ## Untracked -> Tracked (*.md: 所有md檔)
-git add filename1 filename2
+git add <filename1> <filename2>
 ## 所有的變更都放入staging area
 git add .
 
@@ -21,17 +21,27 @@ git log
 git log --oneline
 
 ## 比較特定檔案新/舊(IDnumber)版本差異
-git diff IDnumber -- filename
+git diff <IDnumber> -- <filename>
 
 ## 將檔案還原到IDnumber這個版本 (仍需要commit!!)
-git checkout IDnumber -- filename
+git checkout <IDnumber> -- <filename>
 
 ## 所有檔案還原到某還原點並捨棄該還原點之後的紀錄 (幾乎不可逆, 但reflog有機會)
-git reset --hard IDnumber
+git reset --hard <IDnumber>
 
 ## 本地專案會和遠端的 GitHub 連接起來並命名遠端儲存庫為 origin (網址的別名)
-git remote add origin https://github.com/kokroiceork75/VersionControl.git
+git remote add <origin> https://github.com/kokroiceork75/VersionControl.git
 ## 當前的分支強制重新命名為 main
 git branch -M main
-## 把main 分支的資料推到雲端 (origin)
-git push -u origin main
+## 把main分支的資料推到雲端 (origin)
+git push -u <origin> <main>
+
+## 推送和下載 (要先使用git push -u ...)
+git push/git pull
+## 否則需指定遠端儲存庫 (origin)，main 是本地分支名稱
+git push(pull) <origin> <main>
+
+## 創建一個新的分支並立即切到這個分支上
+git checkout -b <BranchName>
+## 分支推送
+git push <origin> <BranchName>
