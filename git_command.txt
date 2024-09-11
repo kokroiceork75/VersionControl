@@ -1,0 +1,6 @@
+## 列出所有remote
+git remote
+
+## 把main分支的資料推到雲端 (origin), -u: 預設本地分支和遠端分支
+git push -u <origin> <main>
+
