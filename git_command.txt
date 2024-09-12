@@ -4,5 +4,5 @@ git remote
 ## 把main分支的資料推到雲端 (origin), -u: 預設本地分支和遠端分支
 git push -u <origin> <main>
 
-123
- 
+## 單純把staged狀態改回modified狀態
+git reset -- <file>
